@@ -157,6 +157,15 @@ nav {
   transition: var(--transition);
   cursor: pointer;
 }
+.logo-text {
+  display: flex;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+.small-text {
+  color: var(--clr-red-light);
+  margin-left: 0.2rem;
+}
 .nav-toggle:hover {
   color: var(--clr-primary-1);
   transform: rotate(90deg);
@@ -169,7 +178,9 @@ nav {
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
-  display: block;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
   padding: 0.5rem 1rem;
   transition: var(--transition);
 }
@@ -185,9 +196,6 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-}
-.show-container {
-  height: 10rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -223,7 +231,7 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+    color: var(--clr-red-light);
     transition: var(--transition);
   }
   .social-icons a:hover {
