@@ -10,6 +10,7 @@ function App() {
   useEffect(() =>{
     if (loading) return
     setFollowers(data[page])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, page])
 
   const handlePage = (index) => {
